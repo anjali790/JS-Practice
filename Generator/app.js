@@ -22,14 +22,24 @@ let three = generator.next();
 alert(JSON.stringify(three))
 
 //==================================================//
-function* generatorFun() {
+function* generatorFun2() {
     yield 1;
     yield 2;
     yield 3;
 }
 
-let generator2 = generatorFun();
+let generator2 = generatorFun2();
 
 for (let value of generator2) {
     alert(value);
 }
+
+//==================================================//
+function* generatorFun3() {
+    yield 4;
+    yield 5;
+    yield 6;
+}
+
+let generator3 = [1, 2, 3, ...generatorFun3()];
+alert(generator3)
