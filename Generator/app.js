@@ -20,3 +20,16 @@ alert(JSON.stringify(two))
 
 let three = generator.next();
 alert(JSON.stringify(three))
+
+//==================================================//
+function* generatorFun() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+let generator2 = generatorFun();
+
+for (let value of generator2) {
+    alert(value);
+}
