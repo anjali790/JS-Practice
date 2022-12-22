@@ -6,7 +6,7 @@ function* generatorFun() {
     return 3;
 }
 
-//The main method of Generator is next(). It result of next() is always an object with two properties:-
+//The main method of Generator is next(). The result of next() is always an object with two properties:-
 //1. value
 //2. done: true or false
 
