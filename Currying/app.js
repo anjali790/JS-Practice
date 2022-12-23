@@ -8,7 +8,6 @@ function x(p) {
 console.log(x(5)(6)(7));
 
 
-
 function calculate(l, b, h) {
     return l * b * h;
 }
