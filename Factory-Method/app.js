@@ -1,5 +1,5 @@
-function obj(name, branch, college){
-    return{
+function obj(name, branch, college) {
+    return {
         name,
         branch,
         college,
