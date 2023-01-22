@@ -26,3 +26,17 @@ function display(place) {
 }
 
 display.apply(createPerson,["Delhi"])
+
+
+//bind:-
+let createPerson2 = {
+    name: "Shashank",
+    age: 23,
+}
+
+function display2() {
+    console.log(this.name, );
+}
+
+let output=display2.bind(createPerson2)
+output()
