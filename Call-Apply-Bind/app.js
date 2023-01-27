@@ -15,6 +15,18 @@ let person = {
 console.log(obj.college.call(person));
 
 
+//Example of call:-
+let personObj = {
+    name: "Anjali",
+    age: 23,
+}
+
+function display(place) {
+    console.log(this.name, place);
+}
+
+display.apply(personObj, "Delhi")
+
 //apply:-
 let createPerson = {
     name: "Anjali",
@@ -25,7 +37,7 @@ function display(place) {
     console.log(this.name, place);
 }
 
-display.apply(createPerson,["Delhi"])
+display.apply(createPerson, ["Delhi"])
 
 
 //bind:-
@@ -35,8 +47,8 @@ let createPerson2 = {
 }
 
 function display2() {
-    console.log(this.name, );
+    console.log(this.name,);
 }
 
-let output=display2.bind(createPerson2)
+let output = display2.bind(createPerson2)
 output()
